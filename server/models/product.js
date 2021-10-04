@@ -10,7 +10,7 @@ const productSchema = mongoose.Schema(
 {
     user:{
         type: mongoose.Schema.Types.ObjectId,
-        required: true,
+        required: false,
         ref:'User'
     },
     name:{
@@ -20,7 +20,7 @@ const productSchema = mongoose.Schema(
 
     image:{
         type:String,
-        required: true
+        required: false
     },
 
     brand:{
